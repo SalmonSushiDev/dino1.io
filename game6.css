@@ -1,0 +1,106 @@
+/*Web*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    transition: all .5s;
+}
+body{background: #0a0d0f; overflow: hidden;}
+
+/*Game#1*/
+.game1{
+    background: #141a1f;
+    border-radius: 5px;
+    border: 1px solid #f0f2f5;
+    
+    width: 600px;
+    height: 200px;
+    
+    margin: auto;
+}
+.game1:hover{
+    background: #0a0d0f;
+    border-radius: 10px;
+    border: 2px solid #e0e6eb;
+    
+    width: 600.5px;
+    height: 200.5px;
+}
+
+    /*Items#1*/
+#dino1{
+    background-color: #fff;
+    border-radius: 5px;
+    
+    width: 50px;
+    height: 50px;
+    
+    position: relative;
+    top: 148px;
+}
+#dino1:hover{
+    background-color: #f0f2f5;
+    border-radius: 10px;
+    
+    width: 50.5px;
+    height: 50.5px;
+    
+    top: 147px;
+    cursor: default;
+}
+
+#cacti1{
+    background-color: #e0e6eb;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+    width: 20px;
+    height: 40px;
+    
+    position: relative;
+    top: 108px;
+    left: 578px;
+}
+#cacti1:hover{
+    background-color: #d1d9e1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    width: 20.5px;
+    height: 40.5px;
+    
+    top: 107px;
+    left: 577px;
+}
+
+/*Txt#1*/
+.playTxt1{color: #f0f2f5; text-align: center;}
+.playTxt1{color: #e0e6eb;}
+
+.playTxt1 span{color: #28333e;}
+.playTxt1 span:hover{color: #32404d;}
+
+/*Anim#1*/
+@keyframes jumpDino1{
+    0%{top: 148px;}
+    30%{top: 130px;}
+    50%{top: 60px;}
+    55%{top: 80px;}
+    60%{top: 90px;}
+    80%{top: 130px;}
+    90%{top: 150px;}
+    100%{top: 148px;}
+}
+
+@keyframes goCacti1{
+    0%{left: 577.5px;}
+    1%{left: 577px;}
+    10%{left: 550px; border-bottom-right-radius: 0;}
+    100%{left: -100px;}
+}
+
+.dinoHasJump1{animation: jumpDino1 0.5s linear;}
+.cactiMove1{animation: goCacti1 1.1s infinite linear;}
